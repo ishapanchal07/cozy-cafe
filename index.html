@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chai Sutta Bar — Home</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="./index.html">Chai Sutta Bar</a>
+      <nav class="nav">
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="toggle menu">☰</button>
+      <!-- <button onclick="addToCart(`${item.id}`)" class="add-btn">Add to Cart</button> -->
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Fresh bites • Cool drinks • Perfect vibes</h1>
+        <p class="lead">Everything a modern café offers — snacks, shakes, hot drinks and quick meals. Order online or visit us.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="./menu.html">View Menu</a>
+          <a class="btn btn-ghost" href="./checkout.html">Checkout</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2 class="section-title">Popular picks</h2>
+      <div id="featured-grid" class="card-grid"></div>
+    </section>
+
+    <section class="container section small">
+      <div class="two-col">
+        <div>
+          <h3>About Chai Sutta Bar</h3>
+          <p>Cozy café vibe, quick service, excellent chai and a wide variety of snacks & shakes. We craft every cup and plate with love.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>📞 +91 7405157511</p>
+          <p>Visit: Your nearest branch</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Chai Sutta Bar — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // small init for index page
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
