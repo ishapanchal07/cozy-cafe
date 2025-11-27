@@ -99,7 +99,7 @@ html,body{
 }
 
 .lead{
-  color:var(--muted);
+  color:rgb(255, 179, 0);
   font-size:17px;
   margin-bottom:20px;
 }
